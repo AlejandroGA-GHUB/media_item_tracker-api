@@ -1,4 +1,4 @@
-package com.seriestracker.demo.model;
+package com.media_item_tracker.demo.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,7 +1,4 @@
-package com.seriestracker.demo.controller;
-
-import com.seriestracker.demo.exceptions.ShowNotFoundException;
-import com.seriestracker.demo.model.Show;
+package com.media_item_tracker.demo.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,13 +11,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.seriestracker.demo.repository.ShowRepository;
-
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import com.media_item_tracker.demo.exceptions.ShowNotFoundException;
+import com.media_item_tracker.demo.model.Show;
+import com.media_item_tracker.demo.repository.ShowRepository;
 
 import java.util.List;
 

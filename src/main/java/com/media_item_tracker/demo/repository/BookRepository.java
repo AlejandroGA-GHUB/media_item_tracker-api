@@ -1,8 +1,8 @@
-package com.seriestracker.demo.repository;
+package com.media_item_tracker.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.seriestracker.demo.model.Book;
+import com.media_item_tracker.demo.model.Book;
 
 import java.util.List;
 

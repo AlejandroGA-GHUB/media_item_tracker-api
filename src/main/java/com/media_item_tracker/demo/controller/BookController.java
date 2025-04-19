@@ -1,10 +1,7 @@
-package com.seriestracker.demo.controller;
+package com.media_item_tracker.demo.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
-import com.seriestracker.demo.model.Book;
-
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -14,14 +11,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.seriestracker.demo.repository.BookRepository;
+
+import com.media_item_tracker.demo.exceptions.BookNotFoundException;
+import com.media_item_tracker.demo.model.Book;
+import com.media_item_tracker.demo.repository.BookRepository;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 
 import java.util.List;
-import com.seriestracker.demo.exceptions.BookNotFoundException;
 
 @RestController
 @RequestMapping("/books")

@@ -1,15 +1,14 @@
-package com.seriestracker.demo.controller;
+package com.media_item_tracker.demo.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.seriestracker.demo.model.MediaItem;
+import com.media_item_tracker.demo.model.MediaItem;
+import com.media_item_tracker.demo.repository.MediaItemRepository;
 
 import java.util.List;
-
-import com.seriestracker.demo.repository.MediaItemRepository;
 
 @RestController
 @RequestMapping("/media_item")
